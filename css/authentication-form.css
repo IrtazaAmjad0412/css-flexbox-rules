@@ -11,6 +11,8 @@ body {
 }
 
 .content {
+  display: flex;
+  gap: 30px;
   padding: 30px;
 }
 
@@ -36,12 +38,66 @@ form {
 
 #sign-in,
 #sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 100%;
+}
+
+.form-header p {
+  padding-top: 5px;
 }
 
 a {
   color: #335eea;
   text-decoration: none;
+}
+
+#sign-in-form,
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-input-control input {
+  height: 30px;
+}
+
+.form-input-control select {
+  height: 30px;
+}
+
+.form-checkbox-control label {
+  font-weight: normal;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.form-group-horizontal-control .form-input-control {
+  width: 50%;
+}
+
+.form-radio-control label {
+  font-weight: normal;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 label {

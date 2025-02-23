@@ -31,12 +31,7 @@
         <form id="sign-in-form">
           <div class="form-input-control">
             <label for="login-field">Login</label>
-            <input
-              type="email"
-              id="login-field"
-              placeholder="use your email as login"
-              required
-            />
+            <input type="email" id="login-field" placeholder="use your email as login" required />
           </div>
           <div class="form-input-control">
             <label for="password-field">Password</label>
@@ -45,6 +40,7 @@
               id="password-field"
               placeholder="passwords must match"
               minlength="8"
+              maxlength="20"
               required
             />
           </div>
@@ -69,22 +65,11 @@
         <form id="sign-up-form">
           <div class="form-input-control">
             <label for="name-field">Your name</label>
-            <input
-              type="text"
-              id="name-field"
-              minlength="5"
-              placeholder="ex.: John Doe"
-              required
-            />
+            <input type="text" id="name-field" minlength="5" placeholder="ex.: John Doe" required />
           </div>
           <div class="form-input-control">
             <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="name@domain.zone"
-              required
-            />
+            <input type="email" id="email" placeholder="name@domain.zone" required />
           </div>
           <div class="form-input-control">
             <label for="password">Password</label>
@@ -116,6 +101,8 @@
               minlength="12"
               maxlength="12"
               placeholder="ex.: +12336456355"
+              pattern="\d{12}"
+              required
             />
           </div>
           <div class="form-input-control">
@@ -154,13 +141,7 @@
                 <label for="female">Female</label>
               </div>
               <div class="form-radio-control">
-                <input
-                  type="radio"
-                  id="other"
-                  name="gender"
-                  value="other"
-                  checked
-                />
+                <input type="radio" id="other" name="gender" value="other" checked />
                 <label for="other">Other</label>
               </div>
             </div>
